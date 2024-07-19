@@ -6,9 +6,9 @@ SCRIPT_DIR="$HOME/git-cs"
 SCRIPT_NAME="gitcs.sh"  
 
 # Functions  
-echo "=========================="  
-echo " Git Release Finder "  
-echo "=========================="  
+echo "============================"  
+echo " Git Commit Selector Script "  
+echo "============================"  
 
 function clone_repo() {  
     if [ -d "$SCRIPT_DIR" ]; then  
