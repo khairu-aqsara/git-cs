@@ -6,9 +6,9 @@ SCRIPT_DIR="$HOME/git-cs"
 SCRIPT_NAME="gitcs.sh"  
 
 # Functions  
-echo "============================"  
-echo " Git Commit Selector Script "  
-echo "============================"  
+echo "====================================="  
+echo " Git Commit Selector Script Installer"  
+echo "====================================="  
 
 function clone_repo() {  
     if [ -d "$SCRIPT_DIR" ]; then  
@@ -39,7 +39,8 @@ function add_to_path() {
             SHELL_PROFILE="$HOME/.zshrc"  
         fi  
 
-        if [ -n "$SHELL_PROFILE" ]; then  
+        if [ -n "$SHELL_PROFILE" ]; then
+            cp $SCRIPT_DIR/$SCRIPT_NAME $SCRIPT_DIR/gitcs
             echo "Adding $SCRIPT_DIR to PATH in $SHELL_PROFILE..."  
             echo "export PATH=\"\$PATH:$SCRIPT_DIR\"" >> "$SHELL_PROFILE"  
             echo "Please restart your terminal or run 'source $SHELL_PROFILE' to apply the changes."  
