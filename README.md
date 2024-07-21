@@ -1,6 +1,6 @@
 # Git Commit Selector 
 
-![Result](linux.png)
+![Result](project.jpg)
 
 ## Why
 In large software projects, managing releases and finding specific release commits can be challenging. Me specially often need to switch between different release versions for debugging, testing, or deployment purposes. Manually searching through Git logs to find the exact commit for a specific release can be time-consuming and error-prone.  
@@ -95,8 +95,11 @@ Execute the script or executable with two parameters: `branch_name` and `release
 ```sh
 gitcs IOMAD_401_STABLE "4.1.3"
 ```
-and here is the result
+and here is the result on linux / Mac os x
 
+![Result](case.jpg)
+
+and here is the result on windows machine
 ![Result](result.png)
 
 # Compile a Bash script into standalone executables for both Linux and Windows
